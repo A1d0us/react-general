@@ -1,5 +1,6 @@
 import type { FunctionComponent } from "react";
 import className from "classnames";
+import React from "react";
 
 type ExcludeFromTuple<T extends any[], U> = {
   [K in keyof T]: T[K] extends U ? never : T[K];
